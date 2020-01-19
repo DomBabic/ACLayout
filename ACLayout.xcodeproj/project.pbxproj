@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140AFD7A5B126989BAE2AAD6 /* Pods_ACLayout_ACLayoutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561695510FE26788B5723B52 /* Pods_ACLayout_ACLayoutTests.framework */; };
+		3E19C6227A0A2D20AF122FBA /* Pods_ACLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBD84F2ECA51307FECDF6B9 /* Pods_ACLayout.framework */; };
+		6D0A9C4D23D4F78700933D1E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A9C4C23D4F78700933D1E /* UIView+Extensions.swift */; };
+		6D0A9C5223D4FEE400933D1E /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0A9C5123D4FEE400933D1E /* NSLayoutConstraint+Extensions.swift */; };
 		6D9CB35423D4F46A00401566 /* ACLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9CB34A23D4F46A00401566 /* ACLayout.framework */; };
 		6D9CB35923D4F46A00401566 /* ACLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CB35823D4F46A00401566 /* ACLayoutTests.swift */; };
 		6D9CB35B23D4F46A00401566 /* ACLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9CB34D23D4F46A00401566 /* ACLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,12 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CBD84F2ECA51307FECDF6B9 /* Pods_ACLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		561695510FE26788B5723B52 /* Pods_ACLayout_ACLayoutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACLayout_ACLayoutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0A9C4C23D4F78700933D1E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		6D0A9C5123D4FEE400933D1E /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 		6D9CB34A23D4F46A00401566 /* ACLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9CB34D23D4F46A00401566 /* ACLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACLayout.h; sourceTree = "<group>"; };
 		6D9CB34E23D4F46A00401566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D9CB35323D4F46A00401566 /* ACLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9CB35823D4F46A00401566 /* ACLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLayoutTests.swift; sourceTree = "<group>"; };
 		6D9CB35A23D4F46A00401566 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC79A291F856BA72B784CB7 /* Pods-ACLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLayout.release.xcconfig"; path = "Target Support Files/Pods-ACLayout/Pods-ACLayout.release.xcconfig"; sourceTree = "<group>"; };
+		E99D92F062D6E32B06FD0263 /* Pods-ACLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLayout.debug.xcconfig"; path = "Target Support Files/Pods-ACLayout/Pods-ACLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		ED5D82C1B0B3E4A6DD90CD3F /* Pods-ACLayout-ACLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLayout-ACLayoutTests.release.xcconfig"; path = "Target Support Files/Pods-ACLayout-ACLayoutTests/Pods-ACLayout-ACLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCA92D7F451737AC111E2E4D /* Pods-ACLayout-ACLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLayout-ACLayoutTests.debug.xcconfig"; path = "Target Support Files/Pods-ACLayout-ACLayoutTests/Pods-ACLayout-ACLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E19C6227A0A2D20AF122FBA /* Pods_ACLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +57,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D9CB35423D4F46A00401566 /* ACLayout.framework in Frameworks */,
+				140AFD7A5B126989BAE2AAD6 /* Pods_ACLayout_ACLayoutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC0BDC3073E4E8FD78F95C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E99D92F062D6E32B06FD0263 /* Pods-ACLayout.debug.xcconfig */,
+				ADC79A291F856BA72B784CB7 /* Pods-ACLayout.release.xcconfig */,
+				FCA92D7F451737AC111E2E4D /* Pods-ACLayout-ACLayoutTests.debug.xcconfig */,
+				ED5D82C1B0B3E4A6DD90CD3F /* Pods-ACLayout-ACLayoutTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6D9CB34023D4F46900401566 = {
 			isa = PBXGroup;
 			children = (
 				6D9CB34C23D4F46A00401566 /* ACLayout */,
 				6D9CB35723D4F46A00401566 /* ACLayoutTests */,
 				6D9CB34B23D4F46A00401566 /* Products */,
+				1AC0BDC3073E4E8FD78F95C6 /* Pods */,
+				947028FD34D13C1B53EF58CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +100,8 @@
 			children = (
 				6D9CB34D23D4F46A00401566 /* ACLayout.h */,
 				6D9CB34E23D4F46A00401566 /* Info.plist */,
+				6D0A9C4C23D4F78700933D1E /* UIView+Extensions.swift */,
+				6D0A9C5123D4FEE400933D1E /* NSLayoutConstraint+Extensions.swift */,
 			);
 			path = ACLayout;
 			sourceTree = "<group>";
@@ -84,6 +113,15 @@
 				6D9CB35A23D4F46A00401566 /* Info.plist */,
 			);
 			path = ACLayoutTests;
+			sourceTree = "<group>";
+		};
+		947028FD34D13C1B53EF58CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CBD84F2ECA51307FECDF6B9 /* Pods_ACLayout.framework */,
+				561695510FE26788B5723B52 /* Pods_ACLayout_ACLayoutTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D9CB35E23D4F46A00401566 /* Build configuration list for PBXNativeTarget "ACLayout" */;
 			buildPhases = (
+				949249B1592A7F8125761857 /* [CP] Check Pods Manifest.lock */,
 				6D9CB34523D4F46900401566 /* Headers */,
 				6D9CB34623D4F46900401566 /* Sources */,
 				6D9CB34723D4F46900401566 /* Frameworks */,
@@ -122,6 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D9CB36123D4F46A00401566 /* Build configuration list for PBXNativeTarget "ACLayoutTests" */;
 			buildPhases = (
+				ABFC5A7E8BC63FA126D2169B /* [CP] Check Pods Manifest.lock */,
 				6D9CB34F23D4F46A00401566 /* Sources */,
 				6D9CB35023D4F46A00401566 /* Frameworks */,
 				6D9CB35123D4F46A00401566 /* Resources */,
@@ -148,6 +188,7 @@
 				TargetAttributes = {
 					6D9CB34923D4F46900401566 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					6D9CB35223D4F46A00401566 = {
 						CreatedOnToolsVersion = 11.3;
@@ -190,11 +231,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		949249B1592A7F8125761857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABFC5A7E8BC63FA126D2169B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACLayout-ACLayoutTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D9CB34623D4F46900401566 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0A9C4D23D4F78700933D1E /* UIView+Extensions.swift in Sources */,
+				6D0A9C5223D4FEE400933D1E /* NSLayoutConstraint+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +429,9 @@
 		};
 		6D9CB35F23D4F46A00401566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99D92F062D6E32B06FD0263 /* Pods-ACLayout.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W5F4T8BUBL;
@@ -348,6 +440,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ACLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.HeliOs.ACLayout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +457,9 @@
 		};
 		6D9CB36023D4F46A00401566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC79A291F856BA72B784CB7 /* Pods-ACLayout.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = W5F4T8BUBL;
@@ -372,6 +468,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ACLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,7 +484,9 @@
 		};
 		6D9CB36223D4F46A00401566 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA92D7F451737AC111E2E4D /* Pods-ACLayout-ACLayoutTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5F4T8BUBL;
 				INFOPLIST_FILE = ACLayoutTests/Info.plist;
@@ -405,7 +504,9 @@
 		};
 		6D9CB36323D4F46A00401566 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED5D82C1B0B3E4A6DD90CD3F /* Pods-ACLayout-ACLayoutTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5F4T8BUBL;
 				INFOPLIST_FILE = ACLayoutTests/Info.plist;

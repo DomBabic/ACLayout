@@ -1,0 +1,6 @@
+framework module Pods_ACLayout_ACLayoutTests {
+  umbrella header "Pods-ACLayout-ACLayoutTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

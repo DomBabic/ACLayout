@@ -2,9 +2,6 @@
 //  ACLayout.h
 //  ACLayout
 //
-//  Created by Dominik Babić on 19/01/2020.
-//  Copyright © 2020 HeliOs. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 
