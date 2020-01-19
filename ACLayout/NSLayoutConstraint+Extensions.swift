@@ -22,27 +22,27 @@
 import UIKit
 
 extension NSLayoutConstraint {
-    enum Horizontal {
+    public enum Horizontal {
         case leading
         case trailing
     }
     
-    enum Vertical {
+    public enum Vertical {
         case top
         case bottom
     }
     
-    enum Center {
+    public enum Center {
         case centerX
         case centerY
     }
     
-    enum Dimension {
+    public enum Dimension {
         case width
         case height
     }
     
-    enum DimensionRangeBounds {
+    public enum DimensionRangeBounds {
         case min
         case max
     }

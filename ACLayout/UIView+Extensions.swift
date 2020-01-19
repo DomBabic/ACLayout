@@ -38,7 +38,7 @@ extension UIView {
         static var trailingConstraint: NSLayoutConstraint?
     }
     
-    var topConstraint: NSLayoutConstraint? {
+    public var topConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.topConstraint) as? NSLayoutConstraint
         }
@@ -49,7 +49,7 @@ extension UIView {
         }
     }
     
-    var bottomConstraint: NSLayoutConstraint? {
+    public var bottomConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.bottomConstraint) as? NSLayoutConstraint
         }
@@ -60,7 +60,7 @@ extension UIView {
         }
     }
     
-    var leadingConstraint: NSLayoutConstraint? {
+    public var leadingConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.leadingConstraint) as? NSLayoutConstraint
         }
@@ -71,7 +71,7 @@ extension UIView {
         }
     }
     
-    var trailingConstraint: NSLayoutConstraint? {
+    public var trailingConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.trailingConstraint) as? NSLayoutConstraint
         }
@@ -82,7 +82,7 @@ extension UIView {
         }
     }
     
-    var centerXConstraint: NSLayoutConstraint? {
+    public var centerXConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.centerXConstraint) as? NSLayoutConstraint
         }
@@ -93,7 +93,7 @@ extension UIView {
         }
     }
     
-    var centerYConstraint: NSLayoutConstraint? {
+    public var centerYConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.centerYConstraint) as? NSLayoutConstraint
         }
@@ -104,7 +104,7 @@ extension UIView {
         }
     }
     
-    var minWidthConstraint: NSLayoutConstraint? {
+    public var minWidthConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.minWidthConstraint) as? NSLayoutConstraint
         }
@@ -115,7 +115,7 @@ extension UIView {
         }
     }
     
-    var widthConstraint: NSLayoutConstraint? {
+    public var widthConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.widthConstraint) as? NSLayoutConstraint
         }
@@ -126,7 +126,7 @@ extension UIView {
         }
     }
     
-    var maxWidthConstraint: NSLayoutConstraint? {
+    public var maxWidthConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.maxWidthConstraint) as? NSLayoutConstraint
         }
@@ -137,7 +137,7 @@ extension UIView {
         }
     }
     
-    var minHeightConstraint: NSLayoutConstraint? {
+    public var minHeightConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.minHeightConstraint) as? NSLayoutConstraint
         }
@@ -148,7 +148,7 @@ extension UIView {
         }
     }
     
-    var heightConstraint: NSLayoutConstraint? {
+    public var heightConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.heightConstraint) as? NSLayoutConstraint
         }
@@ -159,7 +159,7 @@ extension UIView {
         }
     }
     
-    var maxHeightConstraint: NSLayoutConstraint? {
+    public var maxHeightConstraint: NSLayoutConstraint? {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.maxHeightConstraint) as? NSLayoutConstraint
         }
@@ -170,7 +170,7 @@ extension UIView {
         }
     }
     
-    func constraintWidthToSuperview() {
+    public func constraintWidthToSuperview() {
         guard let parent = superview else {
             fatalError("\(debugDescription) - No superview found.")
         }
@@ -188,7 +188,7 @@ extension UIView {
         widthConstraint?.isActive = true
     }
     
-    func constraintHeightToSuperview() {
+    public func constraintHeightToSuperview() {
         guard let parent = superview else {
             fatalError("\(debugDescription) - No superview found.")
         }
@@ -206,7 +206,7 @@ extension UIView {
         heightConstraint?.isActive = true
     }
     
-    func constraintCenterHorizontallyToSuperview(constant: CGFloat = 0) {
+    public func constraintCenterHorizontallyToSuperview(constant: CGFloat = 0) {
         guard let parent = superview else {
             fatalError("\(debugDescription) - No superview found.")
         }
@@ -216,7 +216,7 @@ extension UIView {
         centerXConstraint?.isActive = true
     }
     
-    func constraintCenterVerticallyToSuperview(constant: CGFloat = 0) {
+    public func constraintCenterVerticallyToSuperview(constant: CGFloat = 0) {
         guard let parent = superview else {
             fatalError("\(debugDescription) - No superview found.")
         }
@@ -226,7 +226,7 @@ extension UIView {
         centerYConstraint?.isActive = true
     }
     
-    func constraint(_ centerAnchor: NSLayoutConstraint.Center, _ relation: NSLayoutConstraint.Relation = .equal, to view: UIView, with constant: CGFloat = 0) {
+    public func constraint(_ centerAnchor: NSLayoutConstraint.Center, _ relation: NSLayoutConstraint.Relation = .equal, to view: UIView, with constant: CGFloat = 0) {
         
         if centerAnchor == .centerX {
             centerXConstraint?.isActive = false
@@ -265,7 +265,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ firstAnchor: NSLayoutConstraint.Vertical, _ relation: NSLayoutConstraint.Relation = .equal, to secondAnchor: NSLayoutConstraint.Vertical, of view: UIView, with constant: CGFloat = 0) {
+    public func constraint(_ firstAnchor: NSLayoutConstraint.Vertical, _ relation: NSLayoutConstraint.Relation = .equal, to secondAnchor: NSLayoutConstraint.Vertical, of view: UIView, with constant: CGFloat = 0) {
         let startAnchor = firstAnchor == .top ? topAnchor : bottomAnchor
         let targetAnchor = secondAnchor == .top ? view.topAnchor : view.bottomAnchor
         
@@ -292,7 +292,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ firstAnchor: NSLayoutConstraint.Horizontal, _ relation: NSLayoutConstraint.Relation = .equal, to secondAnchor: NSLayoutConstraint.Horizontal, of view: UIView, with constant: CGFloat = 0) {
+    public func constraint(_ firstAnchor: NSLayoutConstraint.Horizontal, _ relation: NSLayoutConstraint.Relation = .equal, to secondAnchor: NSLayoutConstraint.Horizontal, of view: UIView, with constant: CGFloat = 0) {
         let startAnchor = firstAnchor == .leading ? leadingAnchor : trailingAnchor
         
         let targetAnchor: NSLayoutXAxisAnchor
@@ -328,7 +328,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ firstAnchor: NSLayoutConstraint.Horizontal, _ relation: NSLayoutConstraint.Relation = .equal, toCenterOf view: UIView, with constant: CGFloat = 0) {
+    public func constraint(_ firstAnchor: NSLayoutConstraint.Horizontal, _ relation: NSLayoutConstraint.Relation = .equal, toCenterOf view: UIView, with constant: CGFloat = 0) {
         let startAnchor = firstAnchor == .leading ? leadingAnchor : trailingAnchor
         
         let constraint: NSLayoutConstraint
@@ -355,7 +355,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ firstAnchor: NSLayoutConstraint.Vertical, _ relation: NSLayoutConstraint.Relation = .equal, toCenterOf view: UIView, with constant: CGFloat = 0) {
+    public func constraint(_ firstAnchor: NSLayoutConstraint.Vertical, _ relation: NSLayoutConstraint.Relation = .equal, toCenterOf view: UIView, with constant: CGFloat = 0) {
         let startAnchor = firstAnchor == .top ? topAnchor : bottomAnchor
         
         let constraint: NSLayoutConstraint
@@ -382,7 +382,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ dimension: NSLayoutConstraint.Dimension, _ relation: NSLayoutConstraint.Relation, to constant: CGFloat) {
+    public func constraint(_ dimension: NSLayoutConstraint.Dimension, _ relation: NSLayoutConstraint.Relation, to constant: CGFloat) {
         
         let viewDimension = (dimension == .width ? widthAnchor : heightAnchor)
         
@@ -409,7 +409,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ firstDimension: NSLayoutConstraint.Dimension, _ relation: NSLayoutConstraint.Relation = .equal, to secondDimension: NSLayoutConstraint.Dimension, of view: UIView, multiplier: CGFloat = 1.0, constant: CGFloat = 0) {
+    public func constraint(_ firstDimension: NSLayoutConstraint.Dimension, _ relation: NSLayoutConstraint.Relation = .equal, to secondDimension: NSLayoutConstraint.Dimension, of view: UIView, multiplier: CGFloat = 1.0, constant: CGFloat = 0) {
         let firstAnchor = firstDimension == .width ? widthAnchor : heightAnchor
         let secondAnchor = secondDimension == .width ? view.widthAnchor : view.heightAnchor
         
@@ -436,7 +436,7 @@ extension UIView {
         }
     }
     
-    func constraint(_ bounds: NSLayoutConstraint.DimensionRangeBounds, _ dimension: NSLayoutConstraint.Dimension, to constant: CGFloat = 0) {
+    public func constraint(_ bounds: NSLayoutConstraint.DimensionRangeBounds, _ dimension: NSLayoutConstraint.Dimension, to constant: CGFloat = 0) {
         
         switch (bounds, dimension) {
         case (.min, .height):
@@ -458,7 +458,7 @@ extension UIView {
         }
     }
     
-    func deactivateAnchoredConstraints() {
+    public func deactivateAnchoredConstraints() {
         widthConstraint?.isActive = false
         heightConstraint?.isActive = false
         centerXConstraint?.isActive = false
