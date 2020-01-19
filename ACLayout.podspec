@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                       ACLayout is a series of extension methods used for programmatically setting up UIView's layout. The aim of this pod is to simplify writing of the layout code.
                    DESC
 
-  # spec.homepage     = "http://EXAMPLE/ACLayout"
+  spec.homepage     = "https://github.com/DomBabic/ACLayout"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -101,7 +101,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/ACLayout.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/DomBabic/ACLayout.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
