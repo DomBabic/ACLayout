@@ -20,6 +20,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Dominik Babić" => "domynick93@hotmail.com" }
   spec.platform     = :ios, "9.0"
+  spec.swift_version = '4.2'
   spec.source       = { :git => "https://github.com/DomBabic/ACLayout.git", :tag => spec.version }
   spec.source_files  = "ACLayout", "ACLayout/**/*.{h,m}"
 
