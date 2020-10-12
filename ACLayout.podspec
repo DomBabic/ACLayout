@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ACLayout"
-  spec.version      = "0.0.4"
+  spec.version      = "0.1.0"
   spec.summary      = "Syntax sugar for methods related to UIView's anchors."
 
   spec.description  = <<-DESC
